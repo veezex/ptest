@@ -48,7 +48,7 @@ module.exports = {
                         options: {
                             sourceMap: true,
                         },
-                    }
+                    },
                 ],
             },
             {
@@ -80,6 +80,13 @@ module.exports = {
             template: "./index.html",
             // Inject the js bundle at the end of the body of the given template
             inject: "body",
+            filename: "index.html",
+        }),
+        new HtmlWebpackPlugin({
+            template: "./about.html",
+            // Inject the js bundle at the end of the body of the given template
+            inject: "body",
+            filename: "about.html",
         }),
         new CleanWebpackPlugin(buildPath),
         new FaviconsWebpackPlugin({
