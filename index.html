@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <header>
+            <a href="/" class="logo">
+                <img src="<%= require('./src/assets/logo.png') %>" alt="" />
+            </a>
+
+            <nav class="header">
+                <a href="#">О компании</a>
+                <a href="#">Преимущества</a>
+                <a href="#">Использоваение</a>
+                <a href="#">Отзывы</a>
+                <a href="#">Контакты</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div
+                        class="swiper-slide with-background"
+                        style="
+                            background-image: url(https://source.unsplash.com/random/1920x2000);
+                        "
+                    >
+                        <a href="#">ТДЦ Садко</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="https://source.unsplash.com/random/1920x601"
+                            alt=""
+                        />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="https://source.unsplash.com/random/1920x602"
+                            alt=""
+                        />
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </main>
+    </body>
+</html>
