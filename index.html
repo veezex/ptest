@@ -8,24 +8,42 @@
             href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
     </head>
 
     <body>
         <header>
-            <a href="/" class="logo">
-                <img src="<%= require('./src/assets/logo.png') %>" alt="" />
-            </a>
+            <div class="wrapper container">
+                <a href="/" class="logo">
+                    <img src="<%= require('./src/assets/logo.png') %>" alt="" />
+                </a>
 
-            <nav class="header">
-                <a href="#">О компании</a>
-                <a href="#">Преимущества</a>
-                <a href="#">Использоваение</a>
-                <a href="#">Отзывы</a>
-                <a href="#">Контакты</a>
-            </nav>
+                <button type="button" class="menu-trigger">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+
+                <nav class="header">
+                    <div><a class="nav-link" href="#">О компании</a></div>
+                    <div><a class="nav-link" href="#">Преимущества</a></div>
+                    <div><a class="nav-link" href="#">Использоваение</a></div>
+                    <div><a class="nav-link" href="#">Отзывы</a></div>
+                    <div class="with-submenu">
+                        <a class="nav-link" href="#">Контакты</a>
+                        <ul class="submenu">
+                            <li><a class="nav-link" href="#">О компании</a></li>
+                            <li><a class="nav-link" href="#">Преимущества</a></li>
+                            <li><a class="nav-link" href="#">Использоваение</a></li>
+                            <li><a class="nav-link" href="#">Отзывы</a></li>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </header>
 
-        <main>
+        <main class="wrapper">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div
@@ -51,6 +69,53 @@
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
+
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                ducimus repellat, quam veritatis, perspiciatis rem nam error
+                quis odit tempore doloribus nesciunt, ad iste quasi praesentium
+                labore cum quisquam voluptatem. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Natus ducimus repellat, quam
+                veritatis, perspiciatis rem nam error quis odit tempore
+                doloribus nesciunt, ad iste quasi praesentium labore cum
+                quisquam voluptatem. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Natus ducimus repellat, quam veritatis,
+                perspiciatis rem nam error quis odit tempore doloribus nesciunt,
+                ad iste quasi praesentium labore cum quisquam voluptatem. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Natus ducimus
+                repellat, quam veritatis, perspiciatis rem nam error quis odit
+                tempore doloribus nesciunt, ad iste quasi praesentium labore cum
+                quisquam voluptatem. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Natus ducimus repellat, quam veritatis,
+                perspiciatis rem nam error quis odit tempore doloribus nesciunt,
+                ad iste quasi praesentium labore cum quisquam voluptatem. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Natus ducimus
+                repellat, quam veritatis, perspiciatis rem nam error quis odit
+                tempore doloribus nesciunt, ad iste quasi praesentium labore cum
+                quisquam voluptatem. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Natus ducimus repellat, quam veritatis,
+                perspiciatis rem nam error quis odit tempore doloribus nesciunt,
+                ad iste quasi praesentium labore cum quisquam voluptatem. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Natus ducimus
+                repellat, quam veritatis, perspiciatis rem nam error quis odit
+                tempore doloribus nesciunt, ad iste quasi praesentium labore cum
+                quisquam voluptatem. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Natus ducimus repellat, quam veritatis,
+                perspiciatis rem nam error quis odit tempore doloribus nesciunt,
+                ad iste quasi praesentium labore cum quisquam voluptatem.
+            </div>
         </main>
+
+        <footer>
+            <div class="wrapper">
+                <nav class="footer">
+                    <a class="nav-link" href="#">О компании</a>
+                    <a class="nav-link" href="#">Преимущества</a>
+                    <a class="nav-link" href="#">Использоваение</a>
+                    <a class="nav-link" href="#">Отзывы</a>
+                    <a class="nav-link" href="#">Контакты</a>
+                </nav>
+            </div>
+        </footer>
     </body>
 </html>
